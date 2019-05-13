@@ -9,7 +9,7 @@
         "icon": "IconMouseOver.png",
         "icon_gray": "IconMouseNormal.png",
         "launcher_icon": "desktop-icon.ico",
-        "description": "Ultimate PUBG weapon & attachment recoil guide."
+        "description": "Ultimate PUBG weapon & attachment recoil guide with over 400+ different recoil patterns."
     },
     "permissions": [
         "Hotkeys"
