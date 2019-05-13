@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg22"
+   sodipodi:docname="sawed_off_bare.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="0.36307692"
+     inkscape:cx="50"
+     inkscape:cy="325"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg22" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-21.203,-534.6)"
+     id="g20"
+     style="fill:#e00000">
+    <circle
+       cx="54.245998"
+       cy="629.59003"
+       r="4.9152999"
+       id="circle4" />
+    <circle
+       cx="78.088997"
+       cy="627.92999"
+       r="4.9152999"
+       id="circle6" />
+    <circle
+       cx="36.025002"
+       cy="619.59998"
+       r="4.9152999"
+       id="circle8" />
+    <circle
+       cx="83.294998"
+       cy="619.08002"
+       r="4.9152999"
+       id="circle10" />
+    <circle
+       cx="107.03"
+       cy="615.53998"
+       r="4.9152999"
+       id="circle12" />
+    <circle
+       cx="66.739998"
+       cy="594.60999"
+       r="4.9152999"
+       id="circle14" />
+    <circle
+       cx="80.067001"
+       cy="581.90997"
+       r="4.9152999"
+       id="circle16" />
+    <circle
+       cx="64.762001"
+       cy="573.67999"
+       r="4.9152999"
+       id="circle18" />
+  </g>
+</svg>

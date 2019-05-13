@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+* {
+    user-select: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.icon {
+    position: relative;
+    width: var(--size, 30px);
+    height: var(--size, 30px);
+    transition: .15s;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.toggle-icons svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.toggle-icons svg:nth-of-type(1) {
+    opacity: 1;
+}
+
+.toggle-icons svg:nth-of-type(2) {
+    opacity: 0;
+}
+
+.toggle-icons.toggled svg:nth-of-type(1) {
+    opacity: 0;
+}
+
+.toggle-icons.toggled svg:nth-of-type(2) {
+    opacity: 1;
+}
+
+.app-header {
+    display: flex;
+    height: 30px;
+    background-color: #131313;
+}
+
+.window-controls-group {
+    margin-left: auto;
+    display: flex;
+    --color: #a8a8a8;
+    --color-hover: #dedede;
+    --bg-color-hover: #272727;
+}
+
+.window-control {
+    color: var(--color);
+    background-color: transparent;
+}
+
+.window-control:hover,
+.window-control:active {
+    color: var(--color-hover);
+    background-color: var(--bg-color-hover);
+}
+
+.window-control-close {
+    --color-hover: #dedede;
+    --bg-color-hover: #c21913;
+}
+
+.light-theme {
+    background-color: #f6f6f6;
+}
+
+.light-theme .window-controls-group {
+    --color: #828282;
+    --color-hover: #4f4f4f;
+    --bg-color-hover: #dedede;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: #131313;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    min-height: 100vh;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000 url(../assets/settings_background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+main>*+* {
+    margin-top: 10px;
+}
+
+kbd {
+    margin: 0px 0.1em;
+    padding: 0.1em 0.6em;
+    border-radius: 3px;
+    border: 1px solid rgb(204, 204, 204);
+    color: rgb(51, 51, 51);
+    line-height: 1.4;
+    display: inline-block;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+    background-color: rgb(247, 247, 247);
+    text-shadow: 0 1px 0 #fff;
+    font-family: inherit;
+}
+
+.in-game {
+    background-color: #000;
+}
+
+.app-header {
+    height: 15px;
+}
+
+.app-header .icon {
+    width: 15px;
+    height: 15px;
+}
+
+.settings {
+    color: white;
+}
+
+.settings h1 {
+    font-size: 62px;
+    margin: 0 auto;
+}
+
+.settings h1+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.settings pre {
+    background: #000;
+    padding: 5px 10px;
+    margin-bottom: 0;
+}
+
+.settings a {
+    color: #fff;
+    font-weight: 400;
+}
+
+.in-game #weaponsView,
+.in-game #weaponView {
+    display: none;
+}
+
+.in-game #categoryView ul,
+.in-game #weaponsView ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+.in-game #categoryView ul li,
+.in-game #weaponsView ul li {
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.in-game #categoryView ul li a,
+.in-game #weaponsView ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.in-game #categoryView ul li a:hover,
+.in-game #weaponsView ul li a:hover {
+    color: #f5a706;
+    background: url(../assets/list_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.in-game #categoryView ul li a img,
+.in-game #weaponsView ul li a img {
+    max-width: 50px;
+    margin-right: 20px;
+    max-height: 20px;
+}
+
+.in-game #categoryView ul li:first-child a img {
+    margin-right: 10px;
+    margin-right: 37px;
+}
+
+.in-game #weaponsView ul li a img {
+    max-height: 28px;
+}
+
+.in-game #weaponView {
+    padding: 10px;
+}
+
+.in-game #weaponView .top_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-game #weaponView a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.in-game #weaponView .top_div img {
+    max-width: 50px;
+    align-self: flex-start;
+    background: #f5a706;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #ffd06f;
+}
+
+.in-game #weaponView h1 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #f5a706;
+}
+
+.in-game #weaponView label img {
+    max-width: 34px;
+    background: #444;
+    padding: 3px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.in-game #weaponView .bottom_div {
+    display: flex;
+}
+
+.in-game #weaponView .bottom_div .col_left {
+    width: 60%;
+}
+
+.in-game #weaponView .bottom_div .col_left h4 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+
+.in-game #weaponView .bottom_div .col_left .muzzles,
+.in-game #weaponView .bottom_div .col_left .lower_rails,
+.in-game #weaponView .bottom_div .col_left .stocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.in-game #weaponView .bottom_div .col_right {
+    width: 40%;
+    height: 285px;
+    position: relative;
+}
+
+.in-game #weaponView .bottom_div .col_right object {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.in-game #weaponView .bottom_div .col_right .vertical_line {
+    height: 275px;
+    width: 1px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+}
+
+:not(svg),
+:not(foreignObject)>svg {
+    stroke-width: 3px !important;
+}
+
+.in-game #weaponView .bottom_div .col_left label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.in-game #weaponView .bottom_div .col_left label input {
+    display: none;
+}
+
+.in-game #weaponView .bottom_div .col_left label input:checked + img, 
+.in-game #weaponView .bottom_div .col_left label:hover img {
+    background: #f5a706;
+}

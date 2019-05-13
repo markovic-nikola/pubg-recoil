@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>PUBG Recoil - Settings page</title>
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/v6/bugsnag.min.js"></script>
+    <script>window.bugsnagClient = bugsnag('4e1feb1f79e9ffe2793ae1e412dc2d7e')</script>
+</head>
+
+<body class="settings">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="window-control_close" viewBox="0 0 30 30">
+            <line x1="19.5" y1="10.5" x2="10.5" y2="19.5" fill="none" stroke="currentcolor" stroke-linecap="round" />
+            <line x1="10.5" y1="10.5" x2="19.5" y2="19.5" fill="none" stroke="currentcolor" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="window-control_minimize" viewBox="0 0 30 30">
+            <line x1="10" y1="19.5" x2="20" y2="19.5" fill="none" stroke="currentcolor" />
+        </symbol>
+    </svg>
+
+    <header class="app-header" draggable="true">
+        <div class="window-controls-group">
+            <button class="icon window-control" id="minimizeButton">
+                <svg>
+                    <use xlink:href="#window-control_minimize" />
+                </svg>
+            </button>
+            <button class="icon window-control window-control-close" id="closeButton">
+                <svg>
+                    <use xlink:href="#window-control_close" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Welcome!</h1>
+        <h2>Start a match and app will <br> automatically appear.</h2>
+        <pre>Show/Hide Overlay: <span id="toggle"></span></pre>
+        <a href="#" id="toggle_change">Click here to change the shortcut</a>
+        <a href="#">FAQ</a>
+    </main>
+
+    <script src="../../lib/require.js"></script>
+    <script>
+        require(['settings-controller'], function (SettingsController) {
+            console.log(`[INIT] settings module loaded`);
+            SettingsController.run();
+        }, function (error) {
+            console.log(`[INIT] failed to load settings module ${error}`);
+        });
+    </script>
+
+
+</body>
+
+</html>

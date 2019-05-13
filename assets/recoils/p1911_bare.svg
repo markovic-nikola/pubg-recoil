@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="100" height="650" version="1.1" viewBox="0 0 100 650" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.481 355.37)" fill="#e00000">
+  <circle cx="94.856" cy="289.37" r="4.9153"/>
+  <circle cx="92.008" cy="278.87" r="4.9153"/>
+  <circle cx="92.542" cy="262.14" r="4.9153"/>
+  <circle cx="90.941" cy="241.32" r="4.9153"/>
+  <circle cx="94.144" cy="223.35" r="4.9153"/>
+  <circle cx="93.254" cy="201.64" r="4.9153"/>
+  <circle cx="90.051" cy="181.53" r="4.9153"/>
+  <circle cx="89.873" cy="158.21" r="4.9153"/>
+  <circle cx="85.246" cy="136.68" r="4.9153"/>
+  <circle cx="87.381" cy="115.32" r="4.9153"/>
+  <circle cx="85.602" cy="90.407" r="4.9153"/>
+  <circle cx="81.153" cy="65.847" r="4.9153"/>
+ </g>
+</svg>

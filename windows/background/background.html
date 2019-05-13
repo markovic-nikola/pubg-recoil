@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PUBG Recoil - Background page</title>
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/v6/bugsnag.min.js"></script>
+    <script>window.bugsnagClient = bugsnag('4e1feb1f79e9ffe2793ae1e412dc2d7e')</script>
+</head>
+
+<body>
+    <script src="../../lib/require.js"></script>
+    <script>
+        requirejs(['background-controller'], function (BackgroundController) {
+            console.log(`[INIT] main module loaded`);
+            BackgroundController.run();
+        }, function (error) {
+            console.log(`[INIT] failed to load main module ${error}`);
+        });
+    </script>
+</body>
+
+</html>
