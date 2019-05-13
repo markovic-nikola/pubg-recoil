@@ -3,17 +3,20 @@ define([
     '../../scripts/services/windows-service.js',
     '../../scripts/services/drag-service.js',
     '../../scripts/constants/weapons.js',
+    '../../scripts/constants/options.js',
     '../../lib/lodash.js'
 ], function (WindowNames,
     windowsService,
     DragService,
     WEAPONS,
+    OPTIONS,
     _lo) {
 
     const img = document.querySelector('img');
     const closeButton = document.getElementById('closeButton');
     const settingsButton = document.getElementById('settingsButton');
     const minimizeButton = document.getElementById('minimizeButton');
+    const supportButton = document.getElementById('supportButton');
     const header = document.getElementsByClassName('app-header')[0];
     const categoryView = document.getElementById('categoryView');
     const weaponsView = document.getElementById('weaponsView');
@@ -24,6 +27,7 @@ define([
     closeButton.addEventListener('click', onCloseClicked);
     settingsButton.addEventListener('click', onSettingsClicked);
     minimizeButton.addEventListener('click', onMimizeClicked);
+    supportButton.addEventListener('click', onSupportClicked);
 
     overwolf.windows.getCurrentWindow(result => {
         dragService = new DragService(result.window, header);
@@ -39,6 +43,10 @@ define([
 
     async function onMimizeClicked(event) {
         windowsService.minimize(WindowNames.IN_GAME);
+    }
+
+    async function onSupportClicked(event) {
+        overwolf.utils.openUrlInDefaultBrowser(OPTIONS.SUPPORT_LINK);
     }
 
     function updateScreenshot(url) {
