@@ -42,7 +42,7 @@
         "start_window": "background",
         "windows": {
             "background": {
-                "file": "windows/background/background.html",
+                "file": "Files/windows/background/background.html",
                 "native_window": true,
                 "desktop_only": true,
                 "background_optimization": false,
@@ -57,7 +57,7 @@
                 "grab_keyboard_focus": false
             },
             "settings": {
-                "file": "windows/settings/settings.html",
+                "file": "Files/windows/settings/settings.html",
                 "transparent": true,
                 "resizable": true,
                 "in_game_only": false,
@@ -72,7 +72,7 @@
                 }
             },
             "in_game": {
-                "file": "windows/in-game/in-game.html",
+                "file": "Files/windows/in-game/in-game.html",
                 "transparent": true,
                 "resizable": true,
                 "is_background_page": false,
